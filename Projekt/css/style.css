@@ -4,13 +4,14 @@ body{
 .stor-container 
 {
 width: 100%;
+
 }
 .topmenu-1
 {
     justify-content: left;
     font-size: 0.8rem;
     padding-right: 0.2rem;
-    padding-left: 13rem;
+    
     color: #2BAAEC;
 }
 .topmenu-2 
@@ -18,7 +19,7 @@ width: 100%;
 font-size: 0.35rem;
 justify-content: left;
 margin-right: auto;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'Roboto'
 
 }
 h1
@@ -30,7 +31,10 @@ h1
 {
     display: flex;
     color: #2BAAEC;
-    margin-right: 13rem;
+}
+.icons a:hover
+{
+color:#25E6C8;
 }
 
 .topmenu
@@ -43,7 +47,8 @@ h1
     font-size: 0.8rem;
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
-    
+    padding-left: 13rem;
+    padding-right: 13rem;
 }
 .icon-1 a
 {
@@ -77,26 +82,95 @@ h1
     padding-right: 13rem;
     padding-left: 13rem;
     justify-content: space-between;
-    align-items: center;
-    
-   
+    align-items: center;  
 }
 .navigering a
 {
     text-decoration: none;
     color: #363636;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
 }
 .logga img
 {
   height: 3.5rem;
-  margin-top: 0.8rem;  
+  margin-top: 1.5rem;  
 }
 .hem
 {
+padding-right: 3rem;
+
 }
-.alternativ
+.om-oss
+{
+    padding-right: 3rem;   
+}
+.tjänster
+{
+    padding-right: 3rem;
+}
+.alternativ 
 {
     display: flex;
     flex-direction: row; 
+    justify-content: space-between;   
+    font-family: 'roboto';
 }
+
+.alternativ a:hover 
+{
+color: #707070;
+}
+
+.mainsection
+{
+ 
+   
+}
+.mainsection img
+{ 
+    height: 480px;
+    width: 100%;  
+}
+
+.sektion
+{
+    position: relative;  
+    display: flex;
+    justify-content: space-around;
+    background-color: #DEDEDE;
+    align-items: center;
+    height: 500px; 
+    width:  100%;
+    margin-top: 1.5rem;    
+}
+.text1 h1
+{
+    font-size: 2rem;
+    font-family: 'Roboto Slab';
+    padding-bottom: 3rem;
+}
+.text1 p
+{
+    font-family: 'Roboto';   
+}
+.knapp 
+{
+background-color: #25E6C8;
+border: none;
+border-radius: 0.5rem;
+padding-left: 2rem;
+padding-right: 2rem;
+padding-top: 0.7rem;
+padding-bottom: 0.7rem;
+color: #FFFFFF;
+font-family: 'Roboto', sans-serif;
+}
+.knapp:hover
+{
+opacity: 5;
+background-color: #2BAAEC;
+cursor: pointer;
+
+
+}
+
