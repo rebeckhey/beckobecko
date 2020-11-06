@@ -47,8 +47,8 @@ color:#25E6C8;
     font-size: 0.8rem;
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
-    padding-left: 13rem;
-    padding-right: 13rem;
+    margin-left: 13rem;
+    margin-right: 13rem;
 }
 .icon-1 a
 {
@@ -79,10 +79,11 @@ color:#25E6C8;
     display: flex;
     flex-direction: row;
     margin: auto;
-    padding-right: 13rem;
-    padding-left: 13rem;
+    margin-right: 13rem;
+    margin-left: 13rem;
     justify-content: space-between;
     align-items: center;  
+    margin-bottom: 1.5rem;
 }
 .navigering a
 {
@@ -121,37 +122,44 @@ padding-right: 3rem;
 color: #707070;
 }
 
-.mainsection
-{
- 
-   
-}
 .mainsection img
 { 
-    height: 480px;
-    width: 100%;  
+    height: 500px;
+    margin-left:9rem;
 }
 
-.sektion
+.mainsection
 {
-    position: relative;  
-    display: flex;
-    justify-content: space-around;
+   
+    display:flex;
+    flex-direction: row;
     background-color: #DEDEDE;
-    align-items: center;
-    height: 500px; 
+    justify-content: space-between;
+    align-items:center;
     width:  100%;
-    margin-top: 1.5rem;    
+    padding-top: 1.5rem; 
+
+    
+      
+}
+.text1
+{
+   padding-right: 20rem;
 }
 .text1 h1
 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Roboto Slab';
-    padding-bottom: 3rem;
+    
+    font-weight: bold;
+    color: #363636;
 }
 .text1 p
 {
     font-family: 'Roboto';   
+    padding-bottom: 1rem;
+    font-size: small;
+    color: #626262;
 }
 .knapp 
 {
@@ -170,7 +178,163 @@ font-family: 'Roboto', sans-serif;
 opacity: 5;
 background-color: #2BAAEC;
 cursor: pointer;
+}
+.sektion2 span
+{
+    color: #2BAAEC;
+} 
+.streck2 hr
+{
+  width: 510px;
+  justify-content: left ;
+  margin-top: -0.8em;
+  margin-bottom: 1.5em;
+  border-top: 1.6px solid #25E6C8; 
+  border-bottom: 1.6px solid #25E6C8;
+  border-left:#25E6C8;
+  border-right:#25E6C8;
+  background-color:#25E6C8 ;
+}
+.sektion2
+{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    height: 500px; 
+    width:  100%;
+    margin-top: 1.5rem;
+}
 
+
+
+.flex1
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 9rem;
+}
+.bild2 img
+{
+    height: 500px;
+   margin-right: 18rem;
+}
+.rubrik-sektion2 h1
+{
+    font-family: 'Roboto slab';
+    font-weight: bolder;
+    color: #363636;
+    font-size: 1.7rem;
+}
+.p-sektion2 p
+{
+    font-family: 'Roboto';
+    color: #626262;
+    font-size: small;
+    line-height: 18px;
+}
+.siffror
+{
+    display: flex;
+    line-height: 25px;
+    font-family: 'Roboto Slab';
+    color: #363636;
+    font-size: 0.8rem;
+    font-weight: 650;
+}
+.siffror span
+{
+    font-size: 1.7rem;
+    font-family: 'Roboto Slab';
+    color: #2BAAEC;
+    font-weight: bold;
+}
+.siffror1 p
+{
+margin-right:3rem;
 
 }
+.siffror2 p
+{
+margin-right:3rem;
+}
+.över-rubrik 
+{
+    display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #F7F7F7;
+}
+
+.över-rubrik hr
+{
+width: 300px;
+  justify-content: left ;
+  margin-top: -0.8em;
+  margin-bottom: 1.5em;
+  border-top: 1.6px solid #25E6C8; 
+  border-bottom: 1.6px solid #25E6C8;
+  border-left:#25E6C8;
+  border-right:#25E6C8;
+  background-color:#25E6C8 ;
+}
+.över-rubrik h1
+{
+    font-family: 'Roboto Slab';
+    font-weight: bolder;
+    color: #363636;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6, img
+{
+  display: flex;
+  flex-direction: column;
+  height: 40px;   
+}
+.bild-box-1, .box-1, .bild-box-2, .box-2, .bild-box-3, .box-3, .bild-box-4, .box-4, .bild-box-5, .box-5, .bild-box-6, .box-6
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 290px;
+    width: 260px;  
+    border-radius: 3%;
+
+}
+
+.bild-box-1, .bild-box-2, .bild-box-3, .bild-box-4, .bild-box-5, .bild-box-6 
+{
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    background-color: #25E6C8;
+}
+.box-section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    
+   background-color: #F7F7F7;
+   
+ 
+  
+}
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6
+{
+
+   
+  
+}
+
+
+
+
+
 
