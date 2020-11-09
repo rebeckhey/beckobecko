@@ -1,0 +1,202 @@
+.header-background
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    
+
+  }
+  .img-1 
+  {
+    position: absolute;
+    top:0;
+    left: 0;
+   
+   height: 270px;
+   object-position: -27px -100px;
+  }
+  .img-2 
+  {
+    position: absolute;
+    top:0;
+    left: 0;
+   
+    
+    height: 270px;
+  
+    object-position:  -27px -100px; 
+  }
+  .logo
+  {
+    position: absolute;
+    height: 2rem;
+    margin: 0.7rem;
+     
+  }
+  .img-screen-1
+  {
+    position: absolute;
+    right:0;
+    height: 100px;
+    margin-right: 5rem;
+    margin-top: 4rem;
+    
+  }
+  .img-screen-2
+  {
+    position: absolute;
+    right:0;
+    height: 100px;
+    margin-right: 7rem;
+    margin-top: 5rem;
+    
+  }
+  .header-background h1
+  {
+    position: absolute;
+    font-size: 0.5rem;
+    left: 12%;
+    top: 370%;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    
+    
+  }
+ .header-background >.btn-group
+ {
+position: absolute;
+right: 0;
+margin-top: 1.5rem;
+margin-right:5rem
+
+ }
+.btn-group i
+{
+  color: #ffbb00;
+  font-size: 20px;
+  
+}
+.header-background button
+{
+  position: absolute;
+  border: 2px solid white;
+  background-color: transparent;
+  font-size: 10px;
+  top: 70%;
+  left:34%;
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  border-radius: 5px;
+}
+
+
+.watch-video .play i
+{
+  position: absolute;
+   color:white;
+   left: 15%;
+    top: 500%;
+    
+    font-size: 0.6rem;
+}
+
+.watch-video .circle 
+{
+  position: absolute;
+  color:#ffbb00;
+  left: 15%;
+    top: 500%;
+    font-size: 1.2rem;
+    border: 1px solid #ffbb00;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 375px){
+  .header-background >.btn-group {
+    margin-right: 4.5rem;
+    margin-top: 1.5rem;
+}
+.img-1
+{
+  height: 320px;
+   object-position: -27px -120px;
+}
+.img-2
+{
+  height: 320px;
+   object-position: -27px -120px;
+}
+.img-screen-1{
+  height: 120px;
+  margin-right: 7rem;
+  margin-top: 4rem;
+
+}
+.img-screen-2{
+  height: 120px;
+    margin-right: 9rem;
+    margin-top: 5rem;
+}
+.header-background h1
+{
+  font-size: 0.7  rem;
+}
+
+}
+
+@media (min-width: 425px){
+
+.header-background >.btn-group{
+  right:10%;
+}
+.img-screen-1{
+  height: 140px;
+  margin-right: 7rem;
+  margin-top: 4rem;
+
+}
+.img-screen-2{
+  height: 140px;
+    margin-right: 9rem;
+    margin-top: 5rem;
+}
+.img-1
+{
+  height: 350px;
+   object-position: -27px -140px;
+}
+.img-2
+{
+  height: 350px;
+   object-position: -27px -140px;
+
+}
+.header-background h1
+{
+  font-size: 0.8rem;
+}
+}
