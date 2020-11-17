@@ -301,7 +301,7 @@ width: 300px;
     align-items: center;
     background-color: #FFFFFF;
     height: 290px;
-    width: 260px;  
+    width: 300px;  
     border-radius: 3%;
 
 }
@@ -314,27 +314,92 @@ width: 300px;
     width: 80px;
     height: 80px;
     background-color: #25E6C8;
+    
 }
+
+
+
+
 .box-section
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr;
-    
+    display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+    width:100%;     
    background-color: #F7F7F7;
-   
- 
-  
+   justify-content: center;
+  align-content: center;
+  background-color:#F7F7F7; 
+  gap: 20px;
+  height:700px;
 }
-.box-1, .box-2, .box-3, .box-4, .box-5, .box-6
+.box-section h1
 {
-
-   
-  
+    font-size: 16px;
+    padding-top: 10px;
+    color:#363636;
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+}
+.box-section p
+{
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Roboto';
 }
 
 
+.bild-box-1:hover, .bild-box-2:hover, .bild-box-3:hover, .bild-box-4:hover, .bild-box-5:hover, .bild-box-6:hover
+{
+background-color:#2BAAEC;
+}
 
+.box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover, .box-5:hover, .box-6:hover
+{
+    
+    box-shadow: 0 4px 8px 0 grey;
+}
+.appointment
+{
+  height: 150px;
+ display: flex;
+  align-items: center;
+  background-color: #2BAAEC;
+  justify-content: space-around;
+  opacity: 80%;
+}
 
-
-
+.appointment button
+{
+    padding: 0.7rem 2rem;
+    margin-right:5rem;
+    border:none;
+    border-radius: 5px;
+    color:#2BAAEC; 
+    background-color: #FFFFFF;
+    font-weight: 700;
+    font-family: 'Roboto';
+    
+}
+.appointment button:hover
+{
+    opacity: 90%;
+    cursor: pointer;    
+}
+.appointment p
+{
+    margin-left: 5rem;
+    font-family: 'Roboto Slab';
+    color: white;
+    font-weight: 700;
+}
+.footer 
+{
+    height:40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto';
+    background-color: #2BAAEC;
+    color: white;
+}

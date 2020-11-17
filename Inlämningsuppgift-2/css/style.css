@@ -6,29 +6,31 @@
     left: 0;
     object-fit: cover; 
     height: 200px;
-    border: 1px solid gold;
+    
+    
   }
   .img-1 
   {
     position: absolute;
     top:0;
     left: 0;
-   
+    
     width: 100%;
     height: auto;
-   object-position: -27px -100px;
+   object-position: -27px    -110px  ;
+   
+   
   }
   .img-2 
   {
     position: absolute;
     top:0;
     left: 0;
-   
     
     width: 100%;
   height: auto;
-  
-    object-position:  -27px -100px; 
+    object-position:  -27px -110px ; 
+    
   }
   .logo
   {
@@ -63,6 +65,7 @@
     top: 55px;
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
+    opacity: 50%;
   }
   .header-background p
   {
@@ -87,6 +90,7 @@ right: 65px;
 }
 .header-background .button-1 button
 {
+  display: none;
   position: absolute;
   border: 2px solid white;
   background-color: transparent;
@@ -111,21 +115,25 @@ right: 65px;
   
   display:none;
 }
-.video
+
+.video  
 {
-  
   position: absolute;
- top: 95px;
- left:12%
+ 
+  bottom: 10px;
+  margin: 1rem;
+  
+
+ 
 }
 
-.video i
+.video  i
 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border:8px solid #ffbb00;
+  border:7px solid #ffbb00;
   background-color: #ffbb00;
   border-radius: 50%;
   color: white;
@@ -135,28 +143,150 @@ right: 65px;
 {
   height: 30px;
 }
-.header-background a
+
+.video a
 {
+  
+  padding: 0.3rem;
+  white-space: nowrap;
   font-family: 'Roboto';
   position: absolute;
-  top:103px;
-  left:22%;
-  font-size: 0.6rem;
-  color: #FFFFFF;
+  font-size: 12px;
+  color:#ffbb00;
+  text-align: center;
+  
 }
-.header-background a:hover
+.video a:hover
 {
 text-decoration: none;
 cursor: pointer;
-    color:#ffbb00;
-    border-bottom: 1px solid #ffbb00
+color:#ffbb00;
+border-bottom: 2px solid #ffbb00;
+
+
 
 }
-
-
-
-
-
+.ec-1
+{
+  display: none;
+  
+}
+.ec-2 
+{
+  display: none;
+ 
+}
+.ec-utbildning 
+{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.ec-utbildning img
+{
+  height:15px;
+}
+.section-1 > .animation
+{
+  
+  position:relative;
+}
+.circles 
+{
+  position: relative; 
+left: 50%;
+transform: translateX(-50%);
+  
+  height: 250px;
+  
+  
+}
+.iphone 
+{
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  
+}
+.flex-column
+{
+  margin-top: 2rem;
+}
+.flex-column button
+{
+  background: rgba(255, 187, 0, 0.15);
+  color:rgba(255, 187, 0, 1);
+  border:none;
+  border-radius: 5px;
+  outline: none;
+}
+.flex-column h1
+{
+  text-align: center  ;
+}
+.flex-column p
+{
+  text-align: center  ;
+}
+.flex-column br
+{
+  text-align: center;
+  display: none;
+}
+.download-buttons
+{
+  display: flex;
+  justify-content: space-around; 
+ 
+}
+.google-play, .app-store 
+{
+  display: flex;
+  border-radius: 5px;        
+  align-items: center;
+  font-family: 'Roboto';
+  font-size: 10px;
+  color:#6B6B6B;
+  border:none;
+  font-weight: 500;
+  background-color: #F8F8F8;
+  
+} 
+.google-play img
+{
+  padding-right: 10px;
+  padding-left: 20px;
+  
+}
+.app-store img
+{
+  padding-right: 10px;
+  padding-left: 20px;
+}
+.download-buttons span
+{
+  color: #111111;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+}
+.download-buttons p 
+{
+  padding-top: 15px;
+  padding-right: 10px;
+}
+.download-buttons a:hover
+{
+  cursor: pointer;
+  box-shadow:3px 3px 2.5px #aaaaaa;
+  text-decoration: none;
+  color:#6B6B6B;
+}
 
 
 
@@ -165,20 +295,28 @@ cursor: pointer;
 
 @media (min-width: 375px){
   .header-background >.dropdown {
-    margin-right: 4.5rem;
-    margin-top: 1.5rem;
+   top:5px;
+   left:74%;
+}
+.header-background
+{
+  height: 230px;
+}
+.ec-utbildning img
+{
+  height: 20px;
 }
 .img-1
 {
   width: 100%;
   height: auto;
-   object-position: -27px -120px;
+   object-position: -27px -130px;
 }
 .img-2
 {
   width: 100%;
   height: auto;
-   object-position: -27px -120px;
+   object-position: -27px -130px;
 }
 .img-screen-1{
   height: 120px;
@@ -207,6 +345,10 @@ cursor: pointer;
 }
 
 @media (min-width: 425px){
+  .header-background
+{
+  height: 250px;
+}
 
 .header-background >.dropdown{
   right:10%;
@@ -226,17 +368,18 @@ cursor: pointer;
 {
   width: 100%;
   height: auto;
-   object-position: -27px -140px;
+   object-position: -40px -150px;
 }
 .img-2
 {
   width: 100%;
   height: auto;
-   object-position: -27px -140px;
+   object-position: -40px -150px;
 
 }
 .header-background h1
 {
+  
   font-size: 0.8rem;
 }
 .header-background p 
@@ -248,6 +391,107 @@ cursor: pointer;
   
   display:none;
 }
+}
+@media (min-width:475px)
+{
+
+  .header-background
+  {
+    height: 270px;
+  }
+  
+  .header-background >.dropdown{
+    right:10%;
+  }
+  .img-screen-1{
+    height: 150px;
+    margin-right: 7rem;
+    margin-top: 4rem;
+  
+  }
+  .img-screen-2{
+    height: 150px;
+      margin-right: 9rem;
+      margin-top: 5rem;
+  }
+  .img-1
+  {
+    width: 100%;
+    height: auto;
+     object-position: -50px -180px;
+  }
+  .img-2
+  {
+    width: 100%;
+    height: auto;
+     object-position: -50px -180px;
+  
+  }
+  .header-background h1
+  {
+    
+    font-size: 0.8rem;
+  }
+  .header-background p 
+  {
+    display: none;
+  }
+  .navigation
+  {
+    
+    display:none;
+  }
+}
+
+
+
+@media (min-width:575px){
+  .header-background
+  {
+    height:300px;   
+  }
+  .header-background >.dropdown{
+    right:10%;
+  }
+  .img-screen-1{
+    height: 140px;
+    margin-right: 7rem;
+    margin-top: 4rem;
+  
+  }
+  .img-screen-2{
+    height: 140px;
+      margin-right: 9rem;
+      margin-top: 5rem;
+  }
+  .img-1
+  {
+    width: 100%;
+    height: auto;
+     object-position: -60px -210px;
+  }
+  .img-2
+  {
+    width: 100%;
+    height: auto;
+     object-position: -60px -210px;
+  
+  }
+  .header-background h1
+  {
+    
+    font-size: 0.8rem;
+  }
+  .header-background p 
+  {
+    display: none;
+  }
+  .navigation
+  {
+    
+    display:none;
+  }
+
 }
 
 @media (min-width: 768px){
@@ -270,13 +514,15 @@ cursor: pointer;
   {
     width: 100%;
   height: auto;
-     object-position: -39px -250px  ;
+     object-position: -80px -250px  ;
+     
   }
   .img-2
   {
     width: 100%;
   height: auto;
-     object-position: -39px -250px ;
+     object-position: -80px -250px ;
+    
      
   
   }
@@ -284,6 +530,7 @@ cursor: pointer;
   {
     top:100px;
     font-size: 2rem;
+    opacity: 100%;
   }
   .header-background p 
   {
@@ -301,17 +548,17 @@ cursor: pointer;
   {
     position: absolute;
     display:block;
-    right: 10%;
-    
   }
   .navigation a
   {
+    
     color:white;
     padding:0.5rem;
     font-family: 'Roboto';
     font-weight: 300;
     font-size: small;
     text-decoration:none;
+    
     
   }
   .navigation a:hover
