@@ -253,6 +253,7 @@ height: 250px;
 .double-screen img
 {
   height: 250px;
+  
 }
 .remove-br br
 {
@@ -299,13 +300,32 @@ cursor: default;
   font-weight: lighter;
   font-size:10px;
   color: #8A8A8A;
-  
 }
-}
+
 .text-column p
 {
   font-family: 'Roboto';
   color:#8A8A8A;
+}
+.screen 
+{
+
+  height:auto;
+  width: 15%;
+}
+#middle-screen
+{
+  height:auto;
+  width: 20%;
+}
+.screen-text h1 p
+{
+font-family: 'Roboto';
+
+}
+
+
+
 }
 @media (min-width: 375px)   /* media queries 375 */
 {
@@ -667,6 +687,7 @@ display: block;
 {
   margin-left:0;
 }
+
 }
 @media (min-width: 992px) /* media queries 992*/
 {
