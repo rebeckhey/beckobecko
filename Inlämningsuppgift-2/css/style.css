@@ -250,11 +250,7 @@ height: 250px;
   text-decoration: none;
   color:#6B6B6B;
 }
-.double-screen img
-{
-  height: 250px;
-  
-}
+
 .remove-br br
 {
   display: none;
@@ -276,6 +272,8 @@ cursor: default;
 .text-column h1
 {
   font-family:'Roboto' ;
+  font-size: 1.8rem;
+  font-weight:bold ;
 }
 .img-sök img, .img-hus img, .img-megafon img, .img-headset img
 {
@@ -292,7 +290,10 @@ cursor: default;
 {
   font-family: 'Roboto';
   font-weight: bold;
+  color: #333333 !important;
   line-height: 1;
+
+  
 }
 .img-sök span, .img-hus span, .img-megafon span, .img-headset span
 {
@@ -306,6 +307,7 @@ cursor: default;
 {
   font-family: 'Roboto';
   color:#8A8A8A;
+  font-size: 0.8rem;
 }
 .screen 
 {
@@ -321,11 +323,39 @@ cursor: default;
 .screen-text h1 p
 {
 font-family: 'Roboto';
-
 }
-
-
-
+.screen-text p
+{
+  color:#8A8A8A;
+  
+}
+.screen-text-map
+{
+  background-image: url("../images/karta.svg");
+  background-repeat: no-repeat;
+  height: 300px;
+  background-position: center;
+}
+.screen-text-map p
+{
+color: #8A8A8A;
+}
+.numbers h1
+{
+color: #3096FE;
+font-size: large;
+font-weight: bolder;
+}
+.numbers span
+{
+font-size: small;
+font-family: 'Roboto';
+color:#333333;
+font-weight: bold;
+}
+.double-screen img
+{
+    height:200px;
 }
 @media (min-width: 375px)   /* media queries 375 */
 {
@@ -602,7 +632,9 @@ display: block;
     position: absolute;
     height: 3rem;
     margin: 0.7rem;
+    font-family:'Poppins';
   }
+  
   .video a
   {
     color: white;
@@ -686,6 +718,19 @@ display: block;
 .text-column button
 {
   margin-left:0;
+}
+.numbers h1
+{
+  margin-left: 3rem;
+  margin-right:3rem;
+}
+.paragraph-grid br 
+{
+  display: none;
+}
+.double-screen img
+{
+    height:250px;
 }
 
 }
@@ -786,6 +831,15 @@ display: block;
 {
   margin:2rem;
 }
+.paragraph-grid br 
+{
+  display: block;
+}
+.double-screen img
+{
+    height:280px;
+}
+
 }
 @media (min-width: 1200px)/* media queries desktop 1200*/
 {
@@ -934,13 +988,10 @@ height: 450px;
 {
  margin: auto;
 }
-.flex-column h1
+.double-screen img
 {
-
+    height:350px;
 }
-.flex-column p
-{
 
-}
 
 }
