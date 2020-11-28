@@ -333,7 +333,7 @@ font-family: 'Roboto';
 {
   background-image: url("../images/karta.svg");
   background-repeat: no-repeat;
-  height: 300px;
+  height: 370px;
   background-position: center;
 }
 .screen-text-map p
@@ -357,6 +357,23 @@ font-weight: bold;
 {
     height:200px;
 }
+.blue-section
+{
+  background-image: url("../images/fff.svg");
+  background-color: #1487FD;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+}
+.blue-section-2 img
+{
+  height: 200px;
+  
+
+}
+
+
 @media (min-width: 375px)   /* media queries 375 */
 {
 .header-background
@@ -719,11 +736,7 @@ display: block;
 {
   margin-left:0;
 }
-.numbers h1
-{
-  margin-left: 3rem;
-  margin-right:3rem;
-}
+
 .paragraph-grid br 
 {
   display: none;
