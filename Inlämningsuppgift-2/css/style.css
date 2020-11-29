@@ -363,16 +363,31 @@ font-weight: bold;
   background-color: #1487FD;
   background-repeat: no-repeat;
   background-size: cover;
+  height: auto;
   width: 100%;
-
-}
-.blue-section-2 img
-{
-  height: 200px;
   
 
 }
+.overlap-screens img
+{
+  height:250px;
+  
+}
+.overlap-screens-front img
+{
+  height:270px;
+ 
+}
+.blue-section-2 img
+{
+  transform: translateY(15%);
+}
 
+
+.overlap-screens-front, .overlap-screens
+{
+  overflow-y: hidden;
+}
 
 @media (min-width: 375px)   /* media queries 375 */
 {
