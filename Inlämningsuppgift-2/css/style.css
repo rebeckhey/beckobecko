@@ -433,7 +433,24 @@ font-weight: bold;
   font-weight: 700;
   border-radius: 8px;
 }
-
+.footer-section
+{
+  background-image: url("../images/Group\ 4634.svg");
+  background-color: #3096FE;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+.links-footer a, i 
+{
+   color: white;
+}
+.links-footer i
+{
+  border: 20px solid rgba(255, 255, 255, 0.15);
+  
+}
 
 @media (min-width: 375px)   /* media queries 375 */
 {
