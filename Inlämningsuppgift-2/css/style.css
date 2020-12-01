@@ -52,6 +52,7 @@
   {
     display: none;
   }
+
  .header-background >.dropdown
  {
 position: absolute;
@@ -315,12 +316,12 @@ cursor: default;
 {
 
   height:auto;
-  width: 15%;
+  width: 10%;
 }
 #middle-screen
 {
   height:auto;
-  width: 20%;
+  width: 15%;
 }
 .screen-text h1 p
 {
@@ -442,15 +443,24 @@ font-weight: bold;
   height: auto;
   width: 100%;
 }
-.links-footer a, i 
+.links-footer a
 {
-   color: white;
+  color:white;
 }
-.links-footer i
+.icons-footer i 
 {
-  border: 20px solid rgba(255, 255, 255, 0.15);
+   background: rgba(255, 255, 255, 0.15);
+   font-size: 1rem;
+   border-radius: 8px;
+   color: rgba(255, 255, 255, 1);
+}
+.icons-footer i
+{
   
+  
+ 
 }
+
 
 @media (min-width: 375px)   /* media queries 375 */
 {
@@ -668,6 +678,7 @@ display: block;
     font-size: 2rem;
     opacity: 100%;
     top:18%;
+    
   }
   .header-background p 
   {
