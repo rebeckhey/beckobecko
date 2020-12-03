@@ -23,6 +23,11 @@ background-image: url(../images/stor.jpg);
     border:none;
     opacity: 100%;
 }
+.register-button button:active
+{
+    background-color: #dd8dbd !important;
+    border:none !important; 
+}
 .register-button button
 {
     background-color: #00ffff;
