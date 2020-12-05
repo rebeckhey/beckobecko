@@ -2,48 +2,16 @@
 /* MOBILE FIRST */
 .header-background
 {
-    position: relative;
-    top: 0;
-    left: 0;
-    object-fit: cover; 
-    height: 200px;
-  }
-  .img-1 
-  {
-    position: absolute;
-    width: 100%;
-    height: auto;
-  }
-  .logo 
-  {
-    position: absolute;
-    height: 2rem;
-    margin: 0.7rem;
-    
-    }
-  
-  .img-screen-1
-  {
-    position: absolute;
-    right:0;
-    height: 100px;
-    right: 20%;
-    top: 30%;
-  }
-  .img-screen-2
-  {
-    position: absolute;
-    right:0;
-    height: 100px;
-    right: 30%;
-    top: 40%;
+  background-size:contain; 
+  width: 100%;
+  background-image: url(../images/blue_background_crop.png) ;
+  background-repeat: no-repeat;
+  object-fit: cover; 
+  height: 250px;
   }
   .header-background h1
   {
-    position: absolute;
-    font-size: 0.7rem;
-    left: 12%;
-    top: 30%;
+    font-size: 0.8rem;
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
     opacity: 50%;
@@ -52,27 +20,21 @@
   {
     display: none;
   }
-
- .header-background >.dropdown
- {
-position: absolute;
-right: 10%;
- }
+.logo
+{
+  height:80%;
+}
 .dropdown i
 {
-  position:absolute;
   color: #ffbb00;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .header-background .button-1 button
 {
-  display: none;
-  position: absolute;
+  
   border: 2px solid white;
   background-color: transparent;
-  font-size: 10px;
-  top: 15px;
-  left:34%;
+  font-size: 1rem;
   text-align: center;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -90,18 +52,21 @@ right: 10%;
   background-color: #FFD45E;
 }
 .navigation button
-{
-outline: none;
-}
-.navigation
-{
-  display:none;
-}
+  {
+    padding: 0.3rem 0.9rem;
+    border:none;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    color: white;
+    background-color:  #ffbb00;
+    font-size: 10px;
+    margin-left:1rem;
+    outline: none; 
+  }
+
 .video  
 {
   position: absolute;
-  bottom:4rem;
-  left: 2.5rem;
 }
 .video  i
 {
@@ -113,11 +78,11 @@ outline: none;
   background-color: #ffbb00;
   border-radius: 50%;
   color: white;
-  font-size: 5px; 
+  font-size: 0.5rem; 
 }
 .video img
 {
-  height: 30px;
+  height: 2rem;
 }
 .video a
 {
@@ -134,7 +99,10 @@ outline: none;
 text-decoration: none;
 cursor: pointer;
 color:#ffbb00;
-border-bottom: 2px solid #ffbb00;
+}
+.button-1, .video
+{
+  display:none;
 }
 .ec-1
 {
@@ -154,7 +122,7 @@ border-bottom: 2px solid #ffbb00;
 }
 .ec-utbildning img
 {
-  height:15px;
+  height:1rem;
 }
 .section-1 > .animation
 {
@@ -216,7 +184,7 @@ height: 250px;
   border-radius: 5px;        
   align-items: center;
   font-family: 'Roboto';
-  font-size: 10px;
+  font-size: 0.6rem;
   color:#6B6B6B;
   border:none;
   font-weight: 500;
@@ -226,25 +194,26 @@ height: 250px;
 {
   padding-right: 1rem;
   padding-left: 1rem;
-  height: 16px;
+  height: 1.5rem;
 }
 .app-store img
 {
   padding-right:1rem;
   padding-left: 1rem;
-  height: 16px;
+  height: 1.5rem;
 }
 .download-buttons span
 {
   color: #111111;
   font-family: 'Roboto';
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 .download-buttons p 
 {
-  padding-top: 6px;
-  padding-right: 10px;
+    padding-top: 6px;
+    padding-right: 10px;
+  color:#6B6B6B !important;
 }
 .download-buttons a:hover
 {
@@ -314,7 +283,6 @@ cursor: default;
 }
 .screen 
 {
-
   height:auto;
   width: 10%;
 }
@@ -330,7 +298,6 @@ font-family: 'Roboto';
 .screen-text p
 {
   color:#8A8A8A;
-  
 }
 .screen-text-map
 {
@@ -368,18 +335,14 @@ font-weight: bold;
   background-size: cover;
   height: auto;
   width: 100%;
-  
-
 }
 .overlap-screens img
 {
   height:250px;
-  
 }
 .overlap-screens-front img
 {
   height:270px;
- 
 }
 .blue-section-2 img
 {
@@ -412,7 +375,6 @@ font-weight: bold;
   font-size: xx-large;
   font-weight: 1000;
   color:#333333;
-  
 }
 .text-form-section p
 {
@@ -425,7 +387,6 @@ font-weight: bold;
   font-weight: 400;
   font-family: 'Roboto';
   font-size: x-small;
-  
 }
 .send-button button
 {
@@ -454,6 +415,23 @@ font-weight: bold;
    border-radius: 8px;
    color: rgba(255, 255, 255, 1);
 }
+.screen-component img
+{
+  height:auto;
+  width: 15%;
+}
+.iphone-bakom
+{
+  position: absolute;
+  top:20%;
+  right:10%;
+}
+.iphone-framför
+{
+  position: absolute;
+  top:30%;
+  right:22%;
+}
 
 
 
@@ -461,61 +439,14 @@ font-weight: bold;
 {
 .header-background
 {
-  height: 230px;
-}
-.ec-utbildning img
-{
-  height: 20px;
-}
-.img-1
-{
-  width: 100%;
-  height: auto;
-}
-.img-screen-1{
-  height: 120px;
-}
-.img-screen-2{
-  height: 120px;
-}
-.header-background h1
-{
-  font-size: 0.9rem;
-}
-.video
-{
-  bottom:5rem;
-  left: 3rem;
-}
-.header-background p
-{
-  display: none;
-}
-.navigation
-{
-  display:none;
+  height: 280px;
 }
 }
-
 @media (min-width: 425px) /* media queries 425*/
 {
   .header-background
 {
-  height: 250px;
-}
-.header-background >.dropdown{
-  right:10%;
-}
-.img-screen-1{
-  height: 140px;
-}
-.img-screen-2{
-  height: 140px;
-}
-.img-1
-{
-  width: 100%;
-  height: auto;
+  height: 350px;
 }
 .header-background h1
 {
@@ -525,30 +456,12 @@ font-weight: bold;
 {
   display: none;
 }
-.navigation
-{
-  display:none;
-}
 }
 @media (min-width:475px) /* media queries 475*/
 {
   .header-background
   {
-    height: 270px;
-  }
-  .header-background >.dropdown{
-    right:10%;
-  }
-  .img-screen-1{
-    height: 150px;
-  }
-  .img-screen-2{
-    height: 150px;
-  }
-  .img-1
-  {
-    width: 100%;
-    height: auto;
+    height: 400px;
   }
   .header-background h1
   {
@@ -558,141 +471,48 @@ font-weight: bold;
   {
     display: none;
   }
-  .navigation
-  {
-    display:none;
-  }
 }
 @media (min-width:500px) /* media queries 500*/
 {
-  .header-background
-  {
-    height: 300px;
-  }
-  .header-background >.dropdown{
-    right:10%;
-  }
-  .img-screen-1{
-    height: 160px;
-  }
-  .img-screen-2{
-    height: 160px;
-  }
-  .img-1
-  {
-    width: 100%;
-    height: auto;
-  }
   .header-background h1
   {
     font-size: 1.2rem;
-  }
-  .header-background p 
-  {
-    display: none;
-  }
-  .navigation
-  {
-    display:none;
-  }
-  .video
-  {
-  bottom:6rem;
-  left: 4rem;
   }
 }
 @media (min-width:575px) /* media queries 575*/
 {
   .header-background
   {
-    height:370px;   
+    height:500px;   
   }
-  .header-background >.dropdown{
-    right:10%;
-  }
-  .img-screen-1{
-    height: 170px;
-  }
-  .img-screen-2{
-    height: 170px;
-  }
-  .img-1
+  .button-1, .video
   {
-    width: 100%;
-    height: auto;
-  }
-  .header-background h1
-  {
-    font-size: 1.3rem;
-  }
-  .header-background p 
-  {
-    display: none;
-  }
-  .navigation
-  {
-    display:none;
-  }
-  .video
-  {
-  bottom:30%;
-  left: 15%;
+    display:block;
   }
 }
 @media (min-width: 768px) /* media queries Laptop 768*/
 {
   .header-background
   {
-    height:500px;
+    height:600px;
   }
-.ec-1
+.ec-1, .ec-2
 {
 display: block;
 }
-.ec-2
-{
-display: block;
-}
-  .header-background >.dropdown{
-    display:none;
-  }
-  .img-screen-1{
-    height: 250px;
-  }
-  .img-screen-2{
-    height: 250px;
-  }
-  .img-1
-  {
-    width: 100%;
-  height: auto; 
-  }
   .header-background h1
   {
-    top:100px;
     font-size: 2rem;
     opacity: 100%;
-    top:18%;
-    
   }
   .header-background p 
   {
     display: block;
-  position: absolute;
-    left: 12%;
-    top: 36%;
     font-family: 'Poppins';
     font-size: 10px;
     line-height: 1rem;
     color: #FFFFFF;
     font-weight: lighter;
-  }
-  .navigation 
-  {
-    position: absolute;
-    display:block;
-    right: 5%;
-    top:5%;
   }
   .navigation a
   {
@@ -709,32 +529,12 @@ display: block;
     color:#ffbb00;
     border-bottom: 1px solid #ffbb00 ;
   }
-  .navigation button
-  {
-    padding: 0.3rem 0.9rem;
-    border:none;
-    border-radius: 5px;
-    font-family: 'Roboto';
-    color: white;
-    background-color:  #ffbb00;
-    font-size: 10px;
-    margin-left:1rem;
-  }
   .header-background .button-1 button
   {
-    position: absolute;
     display: block;
-    left:90px; top:250px;
     font-size: 10px;
     padding: 0.3rem 1rem;
   }
-  .logo
-  {
-    position: absolute;
-    height: 3rem;
-    margin: 0.7rem;
-  }
-  
   .video a
   {
     color: white;
@@ -763,12 +563,7 @@ display: block;
   }
   .app-store
   {
-    margin-left:3rem;
-   border-radius: 7px;
-  }
-  .google-play
-  {
-    border-radius: 7px;
+    margin-left:1rem;
   }
   .section-1 > .animation
 {
@@ -780,7 +575,7 @@ display: block;
 }
 .iphone 
 {
-  transform: translate(-50%, -52%);
+  transform: translate(-50%, -57%);
   height: 280px;
 }
 .om-oss > .flex-column h1 
@@ -805,12 +600,6 @@ display: block;
 {
   display: block;
 }
-.video  
-{
-  position: absolute;
-  bottom:44%;
-  left: 30%;
-}
 .remove-br br
 {
   display: block;
@@ -819,55 +608,33 @@ display: block;
 {
   margin-left:0;
 }
-
 .paragraph-grid br 
 {
   display: none;
 }
 .double-screen img
 {
-    height:250px;
+  height:250px;
 }
-
+.header-text
+{
+  top:10%;
+  left:13%;
+}
 }
 @media (min-width: 992px) /* media queries 992*/
 {
-  .header-background >.dropdown
-  {
-    display: none;
-  }
-  .header-background
+ .header-background
   {
     height: 600px;
   }
-  .img-screen-1
-  {
-    height: 300px;
-  }
-  .img-screen-2{
-    height: 300px;
-  }
-  .img-1
-  {
-    width: 100%;
-  height: auto;
-  }
   .header-background h1
   {
-    top:170px;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
   .header-background p 
-  { 
-    left: 12%;
-    top: 45%;
-    font-size: 12px;
-    }
-  .navigation 
   {
-    position: absolute;
-    display:block;
-    right: 10%;
+    font-size: 0.8rem;
   }
   .navigation a
   {
@@ -895,22 +662,6 @@ display: block;
     font-size: 10px;
     margin-left:1rem;
   }
-  .header-background .button-1 button
-  {
-    left:12%; 
-    top:60%;
-  }
-  .video{
-  position: absolute;
-  bottom:35%;
-  left: 25%;
-  }
-  .logo
-  {
-    position: absolute;
-    height: 3rem;
-    margin: 0.7rem;
-  }
 .flex-column br 
 {
   display: block;
@@ -935,47 +686,20 @@ display: block;
 {
     height:280px;
 }
-
 }
 @media (min-width: 1200px)/* media queries desktop 1200*/
 {
-  .header-background >.dropdown {
-    display:none;
-  }
-  .header-background
-{
-  height: 900px;
-}
-  .img-screen-1{
-    height: 450px;
-    top:12%;
-    left:70%;
-  }
-  .img-screen-2{
-    height: 450px;
-    top:20%;
-    left:59%; 
-  }
-  .img-1
+    .header-background
   {
-    width: 100%;
-  height: auto;
+    height: 850px;
   }
   .header-background h1
   {
-    top:170px;
-    font-size: 3rem;
+    font-size: 3.4rem;
   }
   .header-background p 
   { 
-    top: 35%;
-    font-size: 14px;
-    }
-  .navigation 
-  {
-    position: absolute;
-    display:block;
-    top:3%;
+    font-size: 1rem;
   }
   .navigation a
   {
@@ -1005,31 +729,12 @@ display: block;
   }
   .header-background .button-1 button
   {
-    position: absolute;
     display: block;
-    left:12%; top:45%;
     font-size: 15px;
     padding: 0.5rem 1.8rem;
   }
-  .logo
-  {
-    position: absolute;
-    left: 12%;
-    height: 4rem;
-    margin: 0.7rem;
-  }
-  .video
-  {
-    position: absolute;
-    bottom:50%;
-    left: 30%;
-    }
-    .video  i
+.video  i
 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border:10px solid #ffbb00;
   background-color: #ffbb00;
   border-radius: 50%;
@@ -1075,7 +780,6 @@ height: 450px;
 {
   height: 30px;
 }
-
 .flex-column button
 {
   margin-left:0;
@@ -1088,6 +792,9 @@ height: 450px;
 {
     height:350px;
 }
-
+.header-text
+{
+  top:17%;
+}
 
 }
