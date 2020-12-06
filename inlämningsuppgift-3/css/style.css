@@ -1,51 +1,37 @@
 
-.background-img
-{
+.background-img{
 background-image: url(../images/stor.jpg);
-
-
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
  
 }
-.form-box
-{
-    
-    background-color:#63c5da;
-    opacity: 60%;
-    border-radius: 1rem;
-    font-family: 'Raleway', sans-serif;
+.form-box{
+background-color:#63c5da;
+opacity: 60%;
+border-radius: 1rem;
+font-family: 'Raleway', sans-serif;
 }
-.register-button button:hover
-{
-   background-color: #dd8dbd;
-    border:none;
-    opacity: 100%;
+.register-button button:hover{
+background-color: #dd8dbd;
+border:none;
+opacity: 100%;
 }
-.register-button button:active
-{
-    background-color: #dd8dbd !important;
-    border:none !important; 
+.register-button button:active{
+background-color: #dd8dbd !important;
+border:none !important; 
 }
-.register-button button
-{
-    background-color: #00ffff;
-    border:none;
-    color: gray;
+.register-button button{
+background-color: #00ffff;
+border:none;
+color: gray;
 }
-
-
-@media (min-width:768px)
-{
-.background-img
-{
-   height:100vh;
+@media (min-width:768px){
+.form-box{
+width:60%
 }
-.form-box
-{
-    width:60%
+.background-img{
+    height: 100vh;
 }
-
 
 }
