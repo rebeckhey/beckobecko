@@ -63,7 +63,7 @@ button.addEventListener('click', (event) =>{
     }
     else if (!validEmail (email.value)){
         errorEmail.style.visibility = 'visible'
-        document.getElementById('errorEmail').innerHTML=('Email måste innehålla @ och får inte innehålla åäö!')
+        document.getElementById('errorEmail').innerHTML=('Tänk på att din email måste innehålla @ och får inte innehålla åäö!')
     }
     function validEmail (email){
         return /^([\w\!\#$\%\&\'\*\+\-\/\=\?\^\`{\|\}\~]+\.)*[\w\!\#$\%\&\'\*\+\-\/\=\?\^\`{\|\}\~]+@((((([a-z0-9]{1}[a-z0-9\-]{0,62}[a-z0-9]{1})|[a-z])\.)+[a-z]{2,6})|(\d{1,3}\.){3}\d{1,3}(\:\d{1,5})?)$/i.test(email)
