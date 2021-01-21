@@ -9,6 +9,8 @@ let output = document.querySelector('#outputList');
 let edit = document.querySelector('#editbtn');
 let trash = document.querySelector('#trashbtn');
 
+
+
 let lista = () => {
     output.innerHTML = ''
     users.forEach(user => {
@@ -62,31 +64,24 @@ function validateLastname (){
 }
 function validateEmail ()   {
 
+    if (email.value === '') {
+        errorEmail.style.visibility = 'visible'
+        document.getElementById('errorEmail').innerHTML = ('Alla fält måste vara ifyllda!')
+        return false
+    }
     if (!validEmail(email.value)) {
         errorEmail.style.visibility = 'visible'
         document.getElementById('errorEmail').innerHTML = ('Tänk på att din email måste innehålla @ och får inte innehålla åäö!')
         return false
-        
-       
-    }
-    else if (email.value === '') {
-        errorEmail.style.visibility = 'visible'
-        document.getElementById('errorEmail').innerHTML = ('Alla fält måste vara ifyllda!')
-        return false
-       
- 
     }
     else{
         errorEmail.style.visibility = 'hidden'
         return true
-       
     }
     function validEmail(email) {
         return /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(email)
     }
 }
-
-
 button.addEventListener('click', (event) => {
     event.preventDefault()
    if (validateFirstname() & validateLastname() & validateEmail())
@@ -104,6 +99,6 @@ button.addEventListener('click', (event) => {
 )
  trash.addEventListener('click', (e) => {
     e.preventDefault()
-    lista()
+    lista() 
  })
  
