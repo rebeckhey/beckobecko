@@ -8,8 +8,8 @@ let outputDiv = document.querySelector('#output')
 let form = document.querySelector('#form')
 
 let listing = () => {
+outputDiv.innerHTML=''
 todoObjects.forEach(todoObject => {
-    outputDiv.innerHTML=''
     let makeList=
     `<div class="addedTodo d-flex justify-content-center mt-5" id="output">
         <p class="savedTodo d-flex justify-content-between rounded" id="todoText">${todoObject.title}
@@ -18,7 +18,7 @@ todoObjects.forEach(todoObject => {
             </button>
         </p>
     </div>`
-    outputDiv.insertAdjacentHTML('afterend', makeList)
+    outputDiv.insertAdjacentHTML('beforeend', makeList)
 })
 }
 
