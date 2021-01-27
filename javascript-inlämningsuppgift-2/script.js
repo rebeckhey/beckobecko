@@ -6,17 +6,19 @@ let outputP = document.querySelector('#todoText')
 let outputBtn = document.querySelector('#trashBtn')
 let outputDiv = document.querySelector('#output')
 let form = document.querySelector('#form')
+let completeButton = document.getElementById('completeButton')
+
 
 let listing = () => {
 outputDiv.innerHTML=''
 todoObjects.forEach(todoObject => {
     let makeList=
-    `<div class="addedTodo d-flex justify-content-center mt-5" id="output">
-        <p class="savedTodo d-flex justify-content-between rounded" id="todoText">${todoObject.title}
-            <button id="trashBtn">
-                <i class="fas fa-trash"></i>
-            </button>
-        </p>
+    `<div class="addedTodo d-flex flex-column  align-items-center  justify-content-center mt-5" id="output">
+        <div class="savedTodo d-flex rounded justify-content-between align-items-center" id="todoText">
+        <button id="completeButton"><i class="circle completedCircle pr-3 check fas fa-check-circle"></i></button>
+         <p class="align-middle mb-0">${todoObject.title}</p>
+            <button id="trashBtn"class="align-items-center d-flex pl-3"><i class="fas fa-trash"></i></button>
+            </div>  
     </div>`
     outputDiv.insertAdjacentHTML('beforeend', makeList)
 })
@@ -47,10 +49,27 @@ let postTodo = (title) => {
 .then(data => {
     todoObjects.unshift(data)
     listing()
-})}
-
+}
+)}
+function validate (){
+    if (input.value ===''){
+        errorMessage.style.display = 'block'
+        errorMessage.innerText = `Please enter a todo!`
+        return false
+    }
+    else{
+        errorMessage.style.display = 'none'
+        return true
+    }
+    }
 inputBtn.addEventListener ('click', e =>{
     e.preventDefault()
-postTodo(input.value)
-input.value=''
-})k
+    if (validate()){
+    postTodo(input.value)
+    input.value=''}
+})
+completeButton.addEventListener ('click', e =>{
+    e.preventDefault()
+    console.log(completeButton)
+})
+
