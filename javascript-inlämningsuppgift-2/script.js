@@ -2,41 +2,34 @@ let todoObjects = []
 let input = document.querySelector('#input')
 let inputBtn = document.querySelector('#addBtn')
 let errorMessage = document.querySelector('#small')
-let outputP = document.querySelector('#todoText')
-let outputBtn = document.querySelector('#trashBtn')
 let outputDiv = document.querySelector('#output')
-let form = document.querySelector('#form')
-let completeButton = document.getElementById('completeButton')
 
-
-let listing = () => {
+let lista = () => {
 outputDiv.innerHTML=''
 todoObjects.forEach(todoObject => {
-    let makeList=
+    outputDiv.innerHTML += 
     `<div class="addedTodo d-flex flex-column  align-items-center  justify-content-center mt-5" id="output">
-        <div class="savedTodo d-flex rounded justify-content-between align-items-center" id="todoText">
+    <div class="savedTodo d-flex rounded justify-content-between align-items-center" id="todoText">
         <button id="completeButton"><i class="circle completedCircle pr-3 check fas fa-check-circle"></i></button>
-         <p class="align-middle mb-0">${todoObject.title}</p>
+         <p class="textP align-middle mb-0">${todoObject.title}</p>
             <button id="trashBtn"class="align-items-center d-flex pl-3"><i class="fas fa-trash"></i></button>
-            </div>  
-    </div>`
-    outputDiv.insertAdjacentHTML('beforeend', makeList)
+        </div>
+        </div>`
 })
 }
-
 let useFetch = () => {
-fetch('https://jsonplaceholder.typicode.com/todos?_start=10&_limit=10')
+fetch('https://jsonplaceholder.typicode.com/todos?_start=0&_limit=10')
 .then(response => response.json())
 .then(data => {
- todoObjects=data;    
- console.log(todoObjects)
- listing()
+ todoObjects=data;   
+ console.log(data)
+ lista()
  })
 } 
 useFetch()
 
 let postTodo = (title) => {
-    fetch('https://jsonplaceholder.typicode.com/todos?_start=10&_limit=10', {
+    fetch('https://jsonplaceholder.typicode.com/todos?_start=0&_limit=10', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
@@ -48,7 +41,7 @@ let postTodo = (title) => {
 .then(response => response.json())
 .then(data => {
     todoObjects.unshift(data)
-    listing()
+    lista()
 }
 )}
 function validate (){
@@ -68,8 +61,9 @@ inputBtn.addEventListener ('click', e =>{
     postTodo(input.value)
     input.value=''}
 })
-completeButton.addEventListener ('click', e =>{
+outputDiv.addEventListener('click', e =>{
     e.preventDefault()
-    console.log(completeButton)
+    if(e.target.classList.contains('textP')){
+        e.target.style.textDecoration = 'line-through' 
+        }
 })
-
