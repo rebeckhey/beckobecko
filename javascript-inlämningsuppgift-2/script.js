@@ -64,6 +64,8 @@ inputBtn.addEventListener ('click', e =>{
 outputDiv.addEventListener('click', e =>{
     e.preventDefault()
     if(e.target.classList.contains('textP')){
+        e.target.classList.add('lined')
         e.target.style.textDecoration = 'line-through' 
         }
+        
 })
